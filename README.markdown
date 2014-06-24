@@ -12,6 +12,23 @@ The engine is based on the [gdata-objectivec-client](https://code.google.com/p/g
 
 Furthermore, you will need [SQLite](http://www.sqlite.org) as a build dependency. The database handling uses the [fmdb](https://github.com/ccgus/fmdb) library.
 
+First run
+====================
+
+Clone the sources. All the dependencies should be already included in the project. Unfortunately due to the structure of gdata-objectivec-client you need to include the gdata-objectivec-client headers manually to the project after the first compilation. Do the following:
+
+1. Build the code (you will get an error of GData.h missing)
+2. Open Window -> Organizer and click the GoogleCalendarSyncEngine project from the list
+3. Click on the "Derived Data" (arrow at the end of the menu). Finder opens.
+4. Navigate to Build -> Products -> Debug-iphonesimulator -> Headers in Finder
+5. Drag the Headers folder under GoogleCalendarSyncEngine target in Xcode
+
+The code should now compile fine. If you need more help in the setup, please see this [blog post](http://hoishing.wordpress.com/2011/08/23/gdata-objective-c-client-setup-in-xcode-4/)
+
+Open the [unit test](https://github.com/muhku/GoogleCalendarSyncEngine/blob/master/GoogleCalendarSyncEngineTests/GoogleCalendarSyncEngineTests.m#L33) and change your test Google Account details.
+
+Now when you execute Product -> Test the unit test should execute successfully. You are in business!
+
 Usage
 ====================
 
