@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601A2E651958A42C00036ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E641958A42C00036ADF /* Foundation.framework */; };
+		601A2E671958A42C00036ADF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E661958A42C00036ADF /* CoreGraphics.framework */; };
+		601A2E691958A42C00036ADF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E681958A42C00036ADF /* UIKit.framework */; };
+		601A2E6F1958A42C00036ADF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 601A2E6D1958A42C00036ADF /* InfoPlist.strings */; };
+		601A2E711958A42C00036ADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E701958A42C00036ADF /* main.m */; };
+		601A2E751958A42C00036ADF /* GalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E741958A42C00036ADF /* GalAppDelegate.m */; };
+		601A2E771958A42C00036ADF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601A2E761958A42C00036ADF /* Images.xcassets */; };
+		601A2E7E1958A42C00036ADF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E7D1958A42C00036ADF /* XCTest.framework */; };
+		601A2E7F1958A42C00036ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E641958A42C00036ADF /* Foundation.framework */; };
+		601A2E801958A42C00036ADF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A2E681958A42C00036ADF /* UIKit.framework */; };
+		601A2E881958A42C00036ADF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 601A2E861958A42C00036ADF /* InfoPlist.strings */; };
+		601A2E8A1958A42C00036ADF /* GoogleCalendarSyncEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E891958A42C00036ADF /* GoogleCalendarSyncEngineTests.m */; };
+		601A2EB21958A48D00036ADF /* GalDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E951958A48D00036ADF /* GalDAO.m */; };
+		601A2EB31958A48D00036ADF /* GalEventFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E971958A48D00036ADF /* GalEventFetch.m */; };
+		601A2EB41958A48D00036ADF /* GalEventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E991958A48D00036ADF /* GalEventList.m */; };
+		601A2EB51958A48D00036ADF /* GalGoogleAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E9B1958A48D00036ADF /* GalGoogleAccount.m */; };
+		601A2EB61958A48D00036ADF /* GalGoogleCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E9D1958A48D00036ADF /* GalGoogleCalendar.m */; };
+		601A2EB71958A48D00036ADF /* GalGoogleCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2E9F1958A48D00036ADF /* GalGoogleCalendarEvent.m */; };
+		601A2EB81958A48D00036ADF /* GalGoogleCalendarService.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EA11958A48D00036ADF /* GalGoogleCalendarService.m */; };
+		601A2EB91958A48D00036ADF /* GalGoogleCalendarServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EA31958A48D00036ADF /* GalGoogleCalendarServiceProvider.m */; };
+		601A2EBA1958A48D00036ADF /* GalSynchronizationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EA51958A48D00036ADF /* GalSynchronizationCenter.m */; };
+		601A2EBB1958A48D00036ADF /* GalSynchronizationJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EA71958A48D00036ADF /* GalSynchronizationJob.m */; };
+		601A2EBC1958A48D00036ADF /* GalSyncSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EA91958A48D00036ADF /* GalSyncSession.m */; };
+		601A2EBD1958A48D00036ADF /* GalUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EAB1958A48D00036ADF /* GalUtils.m */; };
+		601A2EBF1958A48D00036ADF /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EAF1958A48D00036ADF /* SFHFKeychainUtils.m */; };
+		601A2ECC1958A57600036ADF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EC31958A57600036ADF /* FMDatabase.m */; };
+		601A2ECD1958A57600036ADF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EC51958A57600036ADF /* FMDatabaseAdditions.m */; };
+		601A2ECE1958A57600036ADF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EC71958A57600036ADF /* FMDatabasePool.m */; };
+		601A2ECF1958A57600036ADF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2EC91958A57600036ADF /* FMDatabaseQueue.m */; };
+		601A2ED01958A57600036ADF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A2ECB1958A57600036ADF /* FMResultSet.m */; };
+		601A34151958A5F300036ADF /* libGDataTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A340C1958A59F00036ADF /* libGDataTouchStaticLib.a */; };
+		601A34171958A60700036ADF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A34161958A60700036ADF /* Security.framework */; };
+		601A34191958A60E00036ADF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A34181958A60E00036ADF /* SystemConfiguration.framework */; };
+		601A35591958AA8100036ADF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A35581958AA8100036ADF /* libsqlite3.dylib */; };
+		601A355B1958AA8D00036ADF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 601A355A1958AA8D00036ADF /* libxml2.dylib */; };
+		601A355E1958AF2000036ADF /* GalGoogleCalendarEventService.m in Sources */ = {isa = PBXBuildFile; fileRef = 601A355D1958AF2000036ADF /* GalGoogleCalendarEventService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601A2E811958A42C00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A2E591958A42C00036ADF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601A2E601958A42C00036ADF;
+			remoteInfo = GoogleCalendarSyncEngine;
+		};
+		601A34091958A59F00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F38F6A60B66E91D00B24B81;
+			remoteInfo = GDataFramework;
+		};
+		601A340B1958A59F00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1C6E0F1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+		601A340D1958A59F00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F14A9DD0B1276B70072EBB8;
+			remoteInfo = GDataUnitTests;
+		};
+		601A340F1958A59F00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F85E018103B83B700B4C418;
+			remoteInfo = GDataIPhoneUnitTests;
+		};
+		601A34111958A59F00036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F1AD9020B71603F00DC0485;
+			remoteInfo = DevelopmentTestTool;
+		};
+		601A34131958A5E100036ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F1C6E0E1027B3CE00B46459;
+			remoteInfo = GDataTouchStaticLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		601A2E611958A42C00036ADF /* GoogleCalendarSyncEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleCalendarSyncEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		601A2E641958A42C00036ADF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		601A2E661958A42C00036ADF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		601A2E681958A42C00036ADF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		601A2E6C1958A42C00036ADF /* GoogleCalendarSyncEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleCalendarSyncEngine-Info.plist"; sourceTree = "<group>"; };
+		601A2E6E1958A42C00036ADF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		601A2E701958A42C00036ADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		601A2E721958A42C00036ADF /* GoogleCalendarSyncEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleCalendarSyncEngine-Prefix.pch"; sourceTree = "<group>"; };
+		601A2E731958A42C00036ADF /* GalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalAppDelegate.h; sourceTree = "<group>"; };
+		601A2E741958A42C00036ADF /* GalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalAppDelegate.m; sourceTree = "<group>"; };
+		601A2E761958A42C00036ADF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		601A2E7C1958A42C00036ADF /* GoogleCalendarSyncEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleCalendarSyncEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		601A2E7D1958A42C00036ADF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		601A2E851958A42C00036ADF /* GoogleCalendarSyncEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleCalendarSyncEngineTests-Info.plist"; sourceTree = "<group>"; };
+		601A2E871958A42C00036ADF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		601A2E891958A42C00036ADF /* GoogleCalendarSyncEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleCalendarSyncEngineTests.m; sourceTree = "<group>"; };
+		601A2E941958A48D00036ADF /* GalDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalDAO.h; sourceTree = "<group>"; };
+		601A2E951958A48D00036ADF /* GalDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalDAO.m; sourceTree = "<group>"; };
+		601A2E961958A48D00036ADF /* GalEventFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalEventFetch.h; sourceTree = "<group>"; };
+		601A2E971958A48D00036ADF /* GalEventFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalEventFetch.m; sourceTree = "<group>"; };
+		601A2E981958A48D00036ADF /* GalEventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalEventList.h; sourceTree = "<group>"; };
+		601A2E991958A48D00036ADF /* GalEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalEventList.m; sourceTree = "<group>"; };
+		601A2E9A1958A48D00036ADF /* GalGoogleAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleAccount.h; sourceTree = "<group>"; };
+		601A2E9B1958A48D00036ADF /* GalGoogleAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleAccount.m; sourceTree = "<group>"; };
+		601A2E9C1958A48D00036ADF /* GalGoogleCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleCalendar.h; sourceTree = "<group>"; };
+		601A2E9D1958A48D00036ADF /* GalGoogleCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleCalendar.m; sourceTree = "<group>"; };
+		601A2E9E1958A48D00036ADF /* GalGoogleCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleCalendarEvent.h; sourceTree = "<group>"; };
+		601A2E9F1958A48D00036ADF /* GalGoogleCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleCalendarEvent.m; sourceTree = "<group>"; };
+		601A2EA01958A48D00036ADF /* GalGoogleCalendarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleCalendarService.h; sourceTree = "<group>"; };
+		601A2EA11958A48D00036ADF /* GalGoogleCalendarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleCalendarService.m; sourceTree = "<group>"; };
+		601A2EA21958A48D00036ADF /* GalGoogleCalendarServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleCalendarServiceProvider.h; sourceTree = "<group>"; };
+		601A2EA31958A48D00036ADF /* GalGoogleCalendarServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleCalendarServiceProvider.m; sourceTree = "<group>"; };
+		601A2EA41958A48D00036ADF /* GalSynchronizationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalSynchronizationCenter.h; sourceTree = "<group>"; };
+		601A2EA51958A48D00036ADF /* GalSynchronizationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalSynchronizationCenter.m; sourceTree = "<group>"; };
+		601A2EA61958A48D00036ADF /* GalSynchronizationJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalSynchronizationJob.h; sourceTree = "<group>"; };
+		601A2EA71958A48D00036ADF /* GalSynchronizationJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalSynchronizationJob.m; sourceTree = "<group>"; };
+		601A2EA81958A48D00036ADF /* GalSyncSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalSyncSession.h; sourceTree = "<group>"; };
+		601A2EA91958A48D00036ADF /* GalSyncSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalSyncSession.m; sourceTree = "<group>"; };
+		601A2EAA1958A48D00036ADF /* GalUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalUtils.h; sourceTree = "<group>"; };
+		601A2EAB1958A48D00036ADF /* GalUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalUtils.m; sourceTree = "<group>"; };
+		601A2EAE1958A48D00036ADF /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		601A2EAF1958A48D00036ADF /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		601A2EC21958A57600036ADF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		601A2EC31958A57600036ADF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		601A2EC41958A57600036ADF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		601A2EC51958A57600036ADF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		601A2EC61958A57600036ADF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		601A2EC71958A57600036ADF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		601A2EC81958A57600036ADF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		601A2EC91958A57600036ADF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		601A2ECA1958A57600036ADF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		601A2ECB1958A57600036ADF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		601A34011958A59E00036ADF /* GData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GData.xcodeproj; path = "Externals/gdata-objectivec-client-read-only/Source/GData.xcodeproj"; sourceTree = "<group>"; };
+		601A34161958A60700036ADF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		601A34181958A60E00036ADF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		601A35581958AA8100036ADF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		601A355A1958AA8D00036ADF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		601A355C1958AF2000036ADF /* GalGoogleCalendarEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalGoogleCalendarEventService.h; sourceTree = "<group>"; };
+		601A355D1958AF2000036ADF /* GalGoogleCalendarEventService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalGoogleCalendarEventService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601A2E5E1958A42C00036ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A355B1958AA8D00036ADF /* libxml2.dylib in Frameworks */,
+				601A35591958AA8100036ADF /* libsqlite3.dylib in Frameworks */,
+				601A34191958A60E00036ADF /* SystemConfiguration.framework in Frameworks */,
+				601A34171958A60700036ADF /* Security.framework in Frameworks */,
+				601A34151958A5F300036ADF /* libGDataTouchStaticLib.a in Frameworks */,
+				601A2E671958A42C00036ADF /* CoreGraphics.framework in Frameworks */,
+				601A2E691958A42C00036ADF /* UIKit.framework in Frameworks */,
+				601A2E651958A42C00036ADF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601A2E791958A42C00036ADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A2E7E1958A42C00036ADF /* XCTest.framework in Frameworks */,
+				601A2E801958A42C00036ADF /* UIKit.framework in Frameworks */,
+				601A2E7F1958A42C00036ADF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		601A2E581958A42C00036ADF = {
+			isa = PBXGroup;
+			children = (
+				601A2E6A1958A42C00036ADF /* GoogleCalendarSyncEngine */,
+				601A2E831958A42C00036ADF /* GoogleCalendarSyncEngineTests */,
+				601A2E631958A42C00036ADF /* Frameworks */,
+				601A2E621958A42C00036ADF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		601A2E621958A42C00036ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601A2E611958A42C00036ADF /* GoogleCalendarSyncEngine.app */,
+				601A2E7C1958A42C00036ADF /* GoogleCalendarSyncEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		601A2E631958A42C00036ADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601A355A1958AA8D00036ADF /* libxml2.dylib */,
+				601A35581958AA8100036ADF /* libsqlite3.dylib */,
+				601A34181958A60E00036ADF /* SystemConfiguration.framework */,
+				601A34161958A60700036ADF /* Security.framework */,
+				601A2E641958A42C00036ADF /* Foundation.framework */,
+				601A2E661958A42C00036ADF /* CoreGraphics.framework */,
+				601A2E681958A42C00036ADF /* UIKit.framework */,
+				601A2E7D1958A42C00036ADF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		601A2E6A1958A42C00036ADF /* GoogleCalendarSyncEngine */ = {
+			isa = PBXGroup;
+			children = (
+				601A34011958A59E00036ADF /* GData.xcodeproj */,
+				601A2EC11958A57600036ADF /* fmdb */,
+				601A2E931958A48D00036ADF /* SyncEngine */,
+				601A2E731958A42C00036ADF /* GalAppDelegate.h */,
+				601A2E741958A42C00036ADF /* GalAppDelegate.m */,
+				601A2E761958A42C00036ADF /* Images.xcassets */,
+				601A2E6B1958A42C00036ADF /* Supporting Files */,
+			);
+			path = GoogleCalendarSyncEngine;
+			sourceTree = "<group>";
+		};
+		601A2E6B1958A42C00036ADF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				601A2E6C1958A42C00036ADF /* GoogleCalendarSyncEngine-Info.plist */,
+				601A2E6D1958A42C00036ADF /* InfoPlist.strings */,
+				601A2E701958A42C00036ADF /* main.m */,
+				601A2E721958A42C00036ADF /* GoogleCalendarSyncEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		601A2E831958A42C00036ADF /* GoogleCalendarSyncEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				601A2E891958A42C00036ADF /* GoogleCalendarSyncEngineTests.m */,
+				601A2E841958A42C00036ADF /* Supporting Files */,
+			);
+			path = GoogleCalendarSyncEngineTests;
+			sourceTree = "<group>";
+		};
+		601A2E841958A42C00036ADF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				601A2E851958A42C00036ADF /* GoogleCalendarSyncEngineTests-Info.plist */,
+				601A2E861958A42C00036ADF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		601A2E931958A48D00036ADF /* SyncEngine */ = {
+			isa = PBXGroup;
+			children = (
+				601A355C1958AF2000036ADF /* GalGoogleCalendarEventService.h */,
+				601A355D1958AF2000036ADF /* GalGoogleCalendarEventService.m */,
+				601A2E941958A48D00036ADF /* GalDAO.h */,
+				601A2E951958A48D00036ADF /* GalDAO.m */,
+				601A2E961958A48D00036ADF /* GalEventFetch.h */,
+				601A2E971958A48D00036ADF /* GalEventFetch.m */,
+				601A2E981958A48D00036ADF /* GalEventList.h */,
+				601A2E991958A48D00036ADF /* GalEventList.m */,
+				601A2E9A1958A48D00036ADF /* GalGoogleAccount.h */,
+				601A2E9B1958A48D00036ADF /* GalGoogleAccount.m */,
+				601A2E9C1958A48D00036ADF /* GalGoogleCalendar.h */,
+				601A2E9D1958A48D00036ADF /* GalGoogleCalendar.m */,
+				601A2E9E1958A48D00036ADF /* GalGoogleCalendarEvent.h */,
+				601A2E9F1958A48D00036ADF /* GalGoogleCalendarEvent.m */,
+				601A2EA01958A48D00036ADF /* GalGoogleCalendarService.h */,
+				601A2EA11958A48D00036ADF /* GalGoogleCalendarService.m */,
+				601A2EA21958A48D00036ADF /* GalGoogleCalendarServiceProvider.h */,
+				601A2EA31958A48D00036ADF /* GalGoogleCalendarServiceProvider.m */,
+				601A2EA41958A48D00036ADF /* GalSynchronizationCenter.h */,
+				601A2EA51958A48D00036ADF /* GalSynchronizationCenter.m */,
+				601A2EA61958A48D00036ADF /* GalSynchronizationJob.h */,
+				601A2EA71958A48D00036ADF /* GalSynchronizationJob.m */,
+				601A2EA81958A48D00036ADF /* GalSyncSession.h */,
+				601A2EA91958A48D00036ADF /* GalSyncSession.m */,
+				601A2EAA1958A48D00036ADF /* GalUtils.h */,
+				601A2EAB1958A48D00036ADF /* GalUtils.m */,
+				601A2EAE1958A48D00036ADF /* SFHFKeychainUtils.h */,
+				601A2EAF1958A48D00036ADF /* SFHFKeychainUtils.m */,
+			);
+			path = SyncEngine;
+			sourceTree = "<group>";
+		};
+		601A2EC11958A57600036ADF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				601A2EC21958A57600036ADF /* FMDatabase.h */,
+				601A2EC31958A57600036ADF /* FMDatabase.m */,
+				601A2EC41958A57600036ADF /* FMDatabaseAdditions.h */,
+				601A2EC51958A57600036ADF /* FMDatabaseAdditions.m */,
+				601A2EC61958A57600036ADF /* FMDatabasePool.h */,
+				601A2EC71958A57600036ADF /* FMDatabasePool.m */,
+				601A2EC81958A57600036ADF /* FMDatabaseQueue.h */,
+				601A2EC91958A57600036ADF /* FMDatabaseQueue.m */,
+				601A2ECA1958A57600036ADF /* FMResultSet.h */,
+				601A2ECB1958A57600036ADF /* FMResultSet.m */,
+			);
+			name = fmdb;
+			path = Externals/fmdb;
+			sourceTree = "<group>";
+		};
+		601A34021958A59E00036ADF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601A340A1958A59F00036ADF /* GData.framework */,
+				601A340C1958A59F00036ADF /* libGDataTouchStaticLib.a */,
+				601A340E1958A59F00036ADF /* GDataUnitTests.octest */,
+				601A34101958A59F00036ADF /* GDataIPhoneUnitTests.octest */,
+				601A34121958A59F00036ADF /* DevelopmentTestTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601A2E601958A42C00036ADF /* GoogleCalendarSyncEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601A2E8D1958A42C00036ADF /* Build configuration list for PBXNativeTarget "GoogleCalendarSyncEngine" */;
+			buildPhases = (
+				601A2E5D1958A42C00036ADF /* Sources */,
+				601A2E5E1958A42C00036ADF /* Frameworks */,
+				601A2E5F1958A42C00036ADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601A34141958A5E100036ADF /* PBXTargetDependency */,
+			);
+			name = GoogleCalendarSyncEngine;
+			productName = GoogleCalendarSyncEngine;
+			productReference = 601A2E611958A42C00036ADF /* GoogleCalendarSyncEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		601A2E7B1958A42C00036ADF /* GoogleCalendarSyncEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601A2E901958A42C00036ADF /* Build configuration list for PBXNativeTarget "GoogleCalendarSyncEngineTests" */;
+			buildPhases = (
+				601A2E781958A42C00036ADF /* Sources */,
+				601A2E791958A42C00036ADF /* Frameworks */,
+				601A2E7A1958A42C00036ADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601A2E821958A42C00036ADF /* PBXTargetDependency */,
+			);
+			name = GoogleCalendarSyncEngineTests;
+			productName = GoogleCalendarSyncEngineTests;
+			productReference = 601A2E7C1958A42C00036ADF /* GoogleCalendarSyncEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		601A2E591958A42C00036ADF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Gal;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matias Muhonen";
+				TargetAttributes = {
+					601A2E7B1958A42C00036ADF = {
+						TestTargetID = 601A2E601958A42C00036ADF;
+					};
+				};
+			};
+			buildConfigurationList = 601A2E5C1958A42C00036ADF /* Build configuration list for PBXProject "GoogleCalendarSyncEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 601A2E581958A42C00036ADF;
+			productRefGroup = 601A2E621958A42C00036ADF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 601A34021958A59E00036ADF /* Products */;
+					ProjectRef = 601A34011958A59E00036ADF /* GData.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				601A2E601958A42C00036ADF /* GoogleCalendarSyncEngine */,
+				601A2E7B1958A42C00036ADF /* GoogleCalendarSyncEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		601A340A1958A59F00036ADF /* GData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GData.framework;
+			remoteRef = 601A34091958A59F00036ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		601A340C1958A59F00036ADF /* libGDataTouchStaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDataTouchStaticLib.a;
+			remoteRef = 601A340B1958A59F00036ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		601A340E1958A59F00036ADF /* GDataUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataUnitTests.octest;
+			remoteRef = 601A340D1958A59F00036ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		601A34101958A59F00036ADF /* GDataIPhoneUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GDataIPhoneUnitTests.octest;
+			remoteRef = 601A340F1958A59F00036ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		601A34121958A59F00036ADF /* DevelopmentTestTool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = DevelopmentTestTool;
+			remoteRef = 601A34111958A59F00036ADF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601A2E5F1958A42C00036ADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A2E6F1958A42C00036ADF /* InfoPlist.strings in Resources */,
+				601A2E771958A42C00036ADF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601A2E7A1958A42C00036ADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A2E881958A42C00036ADF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601A2E5D1958A42C00036ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A2EB71958A48D00036ADF /* GalGoogleCalendarEvent.m in Sources */,
+				601A2EB61958A48D00036ADF /* GalGoogleCalendar.m in Sources */,
+				601A2EBF1958A48D00036ADF /* SFHFKeychainUtils.m in Sources */,
+				601A355E1958AF2000036ADF /* GalGoogleCalendarEventService.m in Sources */,
+				601A2ECC1958A57600036ADF /* FMDatabase.m in Sources */,
+				601A2EB21958A48D00036ADF /* GalDAO.m in Sources */,
+				601A2EBB1958A48D00036ADF /* GalSynchronizationJob.m in Sources */,
+				601A2EBD1958A48D00036ADF /* GalUtils.m in Sources */,
+				601A2ED01958A57600036ADF /* FMResultSet.m in Sources */,
+				601A2EBC1958A48D00036ADF /* GalSyncSession.m in Sources */,
+				601A2EB51958A48D00036ADF /* GalGoogleAccount.m in Sources */,
+				601A2E711958A42C00036ADF /* main.m in Sources */,
+				601A2EB31958A48D00036ADF /* GalEventFetch.m in Sources */,
+				601A2EB41958A48D00036ADF /* GalEventList.m in Sources */,
+				601A2E751958A42C00036ADF /* GalAppDelegate.m in Sources */,
+				601A2ECD1958A57600036ADF /* FMDatabaseAdditions.m in Sources */,
+				601A2EBA1958A48D00036ADF /* GalSynchronizationCenter.m in Sources */,
+				601A2ECF1958A57600036ADF /* FMDatabaseQueue.m in Sources */,
+				601A2ECE1958A57600036ADF /* FMDatabasePool.m in Sources */,
+				601A2EB91958A48D00036ADF /* GalGoogleCalendarServiceProvider.m in Sources */,
+				601A2EB81958A48D00036ADF /* GalGoogleCalendarService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601A2E781958A42C00036ADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A2E8A1958A42C00036ADF /* GoogleCalendarSyncEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601A2E821958A42C00036ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601A2E601958A42C00036ADF /* GoogleCalendarSyncEngine */;
+			targetProxy = 601A2E811958A42C00036ADF /* PBXContainerItemProxy */;
+		};
+		601A34141958A5E100036ADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDataTouchStaticLib;
+			targetProxy = 601A34131958A5E100036ADF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		601A2E6D1958A42C00036ADF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601A2E6E1958A42C00036ADF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		601A2E861958A42C00036ADF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601A2E871958A42C00036ADF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601A2E8B1958A42C00036ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601A2E8C1958A42C00036ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		601A2E8E1958A42C00036ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		601A2E8F1958A42C00036ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		601A2E911958A42C00036ADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleCalendarSyncEngine.app/GoogleCalendarSyncEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GoogleCalendarSyncEngineTests/GoogleCalendarSyncEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		601A2E921958A42C00036ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleCalendarSyncEngine.app/GoogleCalendarSyncEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleCalendarSyncEngine/GoogleCalendarSyncEngine-Prefix.pch";
+				INFOPLIST_FILE = "GoogleCalendarSyncEngineTests/GoogleCalendarSyncEngineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601A2E5C1958A42C00036ADF /* Build configuration list for PBXProject "GoogleCalendarSyncEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601A2E8B1958A42C00036ADF /* Debug */,
+				601A2E8C1958A42C00036ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601A2E8D1958A42C00036ADF /* Build configuration list for PBXNativeTarget "GoogleCalendarSyncEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601A2E8E1958A42C00036ADF /* Debug */,
+				601A2E8F1958A42C00036ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601A2E901958A42C00036ADF /* Build configuration list for PBXNativeTarget "GoogleCalendarSyncEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601A2E911958A42C00036ADF /* Debug */,
+				601A2E921958A42C00036ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 601A2E591958A42C00036ADF /* Project object */;
+}
